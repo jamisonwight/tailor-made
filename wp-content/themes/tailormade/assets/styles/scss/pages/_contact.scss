@@ -1,0 +1,41 @@
+#wpcf7-f4-p98-o1 > form {max-width: 65%;}
+.wpcf7 {float: left; margin-bottom: 100px !important;}
+.wpcf7 .small {float: left;  margin: 0 2% 1% 0;max-width: 31%; width: 100%;}
+.wpcf7 .medium {float: left; margin: 0 2% 1% 0; max-width: 47.5%; width: 100%;}
+.wpcf7 .large {float: left;  margin: 0 0 1% 0;max-width: 96.5%; width: 100%;}
+.wpcf7 .clear {clear: both;}
+.wpcf7 small {font-family: 'Source Sans Pro', sans-serif; font-size: 0.875rem !important;}
+.wpcf7-response-output {float: left;}
+.wpcf7 label,
+.wpcf7 input[type="text"],
+.wpcf7 input[type="text"]::placeholder,
+.wpcf7 input::placeholder,
+.wpcf7-list-item-label {
+    font-family: "din-2014",sans-serif !important;
+    font-size: 0.775rem !important;
+    text-transform: uppercase !important;
+    color: #82191c;
+}
+.wpcf7 .varietal {
+	padding: 0 !important;
+}
+.wpcf7 a,
+.link {
+    color: #000 !important;
+    text-decoration: underline !important;
+}
+.wpcf7-submit {
+    font-family: "din-2014" !important;
+	font-size: 18px !important;
+	background: #000 !important;
+	padding: .8rem 2.3rem !important;
+	color: #f0f0da !important;
+	text-decoration: none !important;
+    text-transform: uppercase !important;
+	box-shadow: none !important;
+	border: none !important;
+	&:hover {
+		background: #680115 !important;
+		color: #fff !important;
+	}
+}

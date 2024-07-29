@@ -1,0 +1,40 @@
+// Set all color values
+$red: red;
+$blue: blue;
+$green: green;
+$yellow: yellow;
+$orange: orange;
+$purple: purple;
+$cyan: cyan;
+$white: white;
+$black: black;
+$grey: grey;
+$grey-dark: #666666;
+
+
+// @function setColor($color, $type: null, $typeValue: null) {
+//     @if ($type == null && $typeValue == null) {
+//         @return $color
+//     };
+//     @if ($type == 'hue') {
+//         @return adjust-hue($color, $typeValue)
+//     };
+//     @if ($type == 'lighten') {
+//         @return lighten($color, $typeValue)
+//     };
+//     @if ($type == 'darken') {
+//         @return darken($color, $typeValue)
+//     };
+//     @if ($type == 'saturate') {
+//         @return saturate($color, $typeValue)
+//     };
+//     @if ($type == 'desaturate') {
+//         @return desaturate($color, $typeValue)
+//     };
+//     @if ($type == 'rgba') {
+//         @return rgba($color, $typeValue)
+//     };
+//     @if ($type == 'opacify') {
+//         @return opacify($color, $typeValue)
+//     }
+// }

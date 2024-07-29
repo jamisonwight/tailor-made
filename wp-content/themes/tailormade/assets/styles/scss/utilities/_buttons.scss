@@ -1,0 +1,86 @@
+// Defualt button Variables
+// $default-background-color: transparent;
+// $default-border-color: setColor(white);
+// $default-font-color: setColor(white);
+// $default-style: 'rounded';
+// $default-thickness: .2rem;
+// $default-padding: .5rem 1rem;
+// $default-border-radius: .4rem; 
+
+
+// Button mixins
+// @mixin getButton(
+//     $background-color: null, 
+//     $border-color: null, 
+//     $font-color: null, 
+//     $style: null, 
+//     $thickness: null, 
+//     $padding: null, 
+//     $borderRadius: null) {
+//     @if ($style == 'rounded' && $borderRadius == null or $style == null) {
+//         border-radius: $default-border-radius;
+//     };
+//     @if ($style == 'rounded' && $borderRadius != null) {
+//         border-radius: $borderRadius;
+//     };
+//     @if ($style == null or $style == 'boxed') {
+//         border-radius: 0;
+//     }
+//     @if ($background-color == null) {
+//         background: $default-background-color;
+//     }
+//     @if ($background-color != null) {
+//         background: $background-color;
+//     }
+//     @if ($border-color == null) {
+//         border-color: $default-border-color;
+//     }
+//     @if ($border-color != null) {
+//         border-color: $border-color;
+//     }
+//     @if ($font-color == null) {
+//         color: $default-font-color;
+//     }
+//     @if ($font-color != null) {
+//         color: $color;
+//     }
+//     @if ($thickness == null) {
+//         border-width: $default-thickness;
+//     }
+//     @if($thickness != null) {
+//         border-width: $thickness;
+//     }
+//     @if ($padding == null) {
+//         padding: $default-padding;
+//     }
+//     @if ($padding != null) {
+//         padding: $padding;
+//     }
+// }
+
+// // Style your own button classes using the getButton mixin
+// .btn-rounded {
+//     @include getButton(); // Will fallback to the defualt button values if no parameters are set
+// }
+
+// .btn-box {
+//     @include getButton();
+// }
+
+.btn-default {
+    padding: 3px 20px;
+    background: linear-gradient(-75deg, $grey, $grey , $grey-dark, $grey, $grey, $grey);
+    box-shadow: inset 0px 0px 0px 2px $grey-dark;
+    border: 2px solid $white;
+    //font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 1 !important;
+    color: $black;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $black;
+    }
+}

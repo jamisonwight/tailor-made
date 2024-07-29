@@ -1,0 +1,76 @@
+.page-id-1614 {
+
+    legend {
+        font-family: "vista-slab";
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 8px;
+
+        @include mq(small) {
+            font-size: 36px;
+        }
+
+        @include mq(medium) {}
+
+        @include mq(large) {}
+    }
+
+    label {
+        display: none !important;
+    }
+
+    .wpcf7 {
+        margin: 100px 0 !important;
+        position: relative;
+        max-width: 960px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .wpcf7 .small {
+        float: left;
+        margin: 0 2% 1% 0;
+        max-width: 31%;
+        width: 100%;
+    }
+
+    .wpcf7 .medium {
+        float: left;
+        margin: 0 2% 1% 0;
+        max-width: 47.5%;
+        width: 100%;
+    }
+
+    .wpcf7 .large {
+        float: left;
+        margin: 0 0 1% 0;
+        max-width: 100% !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .wpcf7 .clear {
+        clear: both;
+    }
+
+    .wpcf7-response-output {
+        float: left;
+    }
+
+    .wpcf7 label {
+        display: none !important;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    .wpcf7 input[type="tel"] {
+        text-align: center;
+
+
+        &::placeholder,
+        &:placeholder-shown {
+            text-align: center;
+        }
+    }
+
+}

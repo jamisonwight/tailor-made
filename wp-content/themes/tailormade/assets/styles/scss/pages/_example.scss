@@ -1,0 +1,15 @@
+// Set the class wrapper
+$mainSelector: main-selector;
+
+
+.#{$mainSelector} {
+    // All nesting child elements with amperstand (compiled: .main-selector-module) 
+    &-module {
+        background: $setColor(red);
+    }
+
+    // (compiled: .main-selector img)
+    &.img {
+        width: 100%;
+    }
+}

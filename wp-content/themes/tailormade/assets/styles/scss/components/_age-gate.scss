@@ -1,0 +1,207 @@
+// /* 	Age Gate - WPEngine
+// ----------------------------------------------- */
+
+#modal_screen {
+    background: #000;
+    background-attachment: fixed;
+    background-size: cover !important;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 120000;
+}
+
+#modal_content {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    top: 0 !important;
+    width: 100%;
+    z-index: 120001;
+}
+
+#modal_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    padding: 0 2.5rem;
+    @include mq(large) {
+        padding: 0 4rem;
+        background-position: left !important;
+    }
+
+    img {
+        width: 237px;
+        height: auto;
+    }
+    .agree {
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        align-items: center;
+    }
+    .agree input[type="checkbox"],
+    .agree div {
+        display: inline-block;
+    }
+    .agree input[type="checkbox"] {
+        align-self: center;
+    }
+    h1 {
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        @include mq(medium) {
+            font-size: 22px;
+        }
+        @include mq(large) {
+            width: 70%;
+        }
+    }
+    a {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+    .btn-default {
+        background: rgb(242, 242, 226) !important;
+        width: 50px;
+        height: 46px;
+        color: #000;
+        box-shadow: none !important;
+        border: none !important;
+        text-decoration: none !important;
+        font-size: 18px !important;
+        margin: 0 15px !important;
+        padding: 10px 20px !important;
+        @include mq(medium) {
+            padding: 10px 70px !important;
+        }
+    }
+}
+
+
+#modal_content nav {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#modal_content nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#modal_content nav li {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+#modal_content nav li span {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+#modal_content nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.regret-wrap {
+    position: absolute;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    .regret-content {
+        h1 {
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            padding: 3rem;
+            @include mq(medium) {
+                font-size: 22px;
+            }
+            @include mq(large) {
+            }
+        }
+    }
+}
+
+
+// #modal_content nav .av_go {
+//     border: none;
+//     color: #fff;
+//     font-size: 20px;
+//     padding: 11px 27px;
+//     text-decoration: none !important;
+//     text-transform: lowercase;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     cursor: pointer;
+//     display: inline-block;
+//     font-size: 17px;
+//     margin: 0 8px 32px 0;
+//     padding: 11px 20px;
+//     width: 203px;
+// }
+
+// #modal_content nav .av_no {
+//     border: none;
+//     color: #fff;
+//     font-size: 20px;
+//     padding: 11px 27px;
+//     text-decoration: none !important;
+//     text-transform: lowercase;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     cursor: pointer;
+//     display: inline-block;
+//     font-size: 17px;
+//     margin: 0 8px 32px 0;
+//     padding: 11px 20px;
+//     width: 203px;
+// }
+
+#modal_content nav .av_btn span {
+    display: block;
+    font-size: 35px;
+    line-height: 32px;
+}
+
+#modal_content #modal_regret_wrapper nav a.av_btn {
+    margin-top: 0;
+    width: 130px;
+}
+
+#modal_content .footer {
+    bottom: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+#modal_content .footer p {
+    max-width: 100%;
+    text-transform: lowercase;
+}
+
+#modal_regret_wrapper {
+    height: 100%;
+    padding-top: 25%;
+}

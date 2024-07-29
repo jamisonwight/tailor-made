@@ -1,0 +1,344 @@
+// EDGE browser targeting
+@supports (-ms-ime-align:auto) { 
+    input[type="text"],
+    select {
+        letter-spacing: unset !important;
+    }
+}
+
+
+.store_locator_plus {
+    display: flex;
+    justify-content: center;
+
+    @include mq(small) {
+        flex-direction: column;
+    }
+    @include mq(large) {
+        flex-direction: row;
+    }
+}
+
+#sl_div {
+    display:  flex;
+    flex-wrap:  wrap;
+
+    @include mq(small) {
+        flex-direction: column;
+    }
+    @include mq(large) {
+        flex-direction: row;
+    }
+}
+
+.slp_search_form{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include mq(small) {
+        width: 100% !important;
+    }
+    @include mq(large) {
+        width: 40% !important;
+    }
+
+    // label {
+    //     display: none !important;
+    // }
+
+    h1 {
+        font-family: 'din-2014' !important;
+        font-size: 35px;
+        margin: 0;
+        padding-bottom: 2rem;
+        @include mq(small) {
+            text-align: center;
+        }
+        @include mq(large) {
+            text-align: left;
+            font-size: 45px;
+        }
+    }
+
+    .search_box {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        align-items: center !important;
+        align-content: stretch;
+        justify-content: center;
+        @include mq(small) {
+            flex-direction: column;
+            padding-bottom: 6rem;
+        }
+        @include mq(large) {
+            flex-direction: row;
+            padding-bottom: 0;
+        }
+
+        .search_item {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center !important;
+            margin-top: -1.3rem;
+            margin-bottom: 0;
+            flex-direction: column !important;
+            align-content: center;
+            align-items: flex-start !important;
+        }
+    }
+
+    input[type="text"],
+    select {
+        display: block;
+        width: 182px !important;
+        height: unset !important;
+        margin: 0 0 1rem;
+        padding: 1.5rem 0.5rem .2rem;
+        border-bottom: 2px solid #000 !important;
+        border-top: none !important;
+        border-right: none !important;
+        border-left: none !important;
+        background-color: transparent !important;
+        box-shadow: unset !important;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5;
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014' !important;
+        font-size: 16px;
+        transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        opacity: 1;
+    }
+}
+
+#radiusSelect {
+    letter-spacing: 5px;
+}
+
+#addressInput,
+#radiusSelect {
+    opacity: 1 !important;
+    display: block;
+    width: 300px !important;
+    height: unset !important;
+    margin: 0 0 1rem;
+    padding: .8rem 0.5rem;
+    border: none !important;
+    background-color: #fbfaf5 !important;
+    box-shadow: unset !important;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left !important;
+    color: $red;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include mq(480px) {
+        width: 300px !important;
+    }
+    @include mq(medium) {
+        width: 392px !important;
+    }
+
+    
+    
+    ::-webkit-input-placeholder {
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+}
+
+#addy_in_address {
+    label {
+        padding-bottom: .5rem;
+    }
+}
+
+.slp_map {
+    height: 400px !important;
+
+    @include mq(small) {
+        width: 100% !important;
+        padding: 0 4rem;
+        margin-top: 2rem;
+    }
+    @include mq(large) {
+        width: 60% !important;
+        padding: 0 4rem;
+        margin-top: 0;
+    }
+}
+
+.no_results_found {
+    h2 {
+        visibility: hidden;
+    }
+}
+
+#addressSubmit {
+    font-family: "din-2014";
+	font-size: 18px;
+	background: #000;
+	padding: 1.1rem 2rem;
+	color: #fff;
+    text-decoration: none;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    margin: 1.5rem 0 0 3.5rem;
+    @include mq(medium) {
+        margin: 1.5rem 0 0 6.5rem; 
+    }
+	&:hover {
+		background: #680115;
+		color: #fff;
+	}
+}
+
+#addy_in_radius {
+    display: unset !important;
+    
+    label {
+        i {
+            font-size: 35px;
+            font-weight: 300;
+            color: #a3a3a3;
+            position: relative;
+            top: .3rem;
+        }
+    }
+}
+
+[type='text'], 
+[type='password'], 
+[type='date'], 
+[type='datetime'], 
+[type='datetime-local'], 
+[type='month'], 
+[type='week'], 
+[type='email'], 
+[type='number'], 
+[type='search'], 
+[type='tel'], 
+[type='time'], 
+[type='url'], 
+[type='color'], 
+textarea {
+    opacity: 1 !important;
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    :placeholder-shown { 
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+    ::placeholder {
+        color: #bc3640 !important;
+        text-align: left !important;
+        font-family: 'din-2014';
+        font-size: 16px;
+        opacity: 1 !important;
+    }
+}
+input::placeholder,
+select option {
+    color: #bc3640 !important;
+    text-align: left !important;
+    font-family: 'din-2014';
+    font-size: 16px;
+    opacity: 1 !important;
+}
+
+label {
+    color: #bc3640;
+    text-align: left !important;
+    font-family: 'din-2014';
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+// .slp_search_form .search_box, .slp_search_form .search_box .search_item, .slp_search_form .search_box .search_item div {
+//     display: block !important;
+// }
+
+// #sl_div #map_sidebar .results_wrapper .results_entry:hover {
+//     background: none !important;
+// }
+
+.slp_results_container .results_wrapper:hover, .slp_results_container .results_wrapper {
+    background-color: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+}
+
+#map_sidebar {
+    width: 100% !important;
+}

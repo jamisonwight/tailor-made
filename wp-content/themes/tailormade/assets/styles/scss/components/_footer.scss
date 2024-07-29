@@ -1,0 +1,54 @@
+footer {
+    background: #000;
+}
+
+.copyright  {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem 0;
+
+    ul {
+        display: table;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0 0 1rem 0;
+
+        li {
+            display: inline;
+
+            @include mq(small) {
+                font-size: .8rem;
+            }
+            @include mq(medium) {
+                font-size: inherit;
+            }
+        }
+    }
+    a {
+        color: rgb(239, 238, 231);
+        text-decoration: none;
+        font-family: "din-2014";
+        font-size: 16px;
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+            color: rgba(250, 250, 250, 0.9);
+        }
+
+    }
+    li:nth-child(2),
+    li:nth-child(4),
+    li:nth-child(6) {
+        padding: 0 .5rem;
+        color: rgb(250, 250, 250);
+    }
+
+    span {
+        color: rgb(250, 250, 250);
+        text-align: center;
+        font-family: "din-2014";
+        font-weight: bold;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,439 @@
+.home {
+    .banner {
+        position: relative;
+
+        .cls-1 {
+            filter: unset !important;
+        }
+
+        .full-bg {
+            height: 550px;
+            will-change: transform, left, top, scroll-position;
+
+            @include mq(medium) {
+                height: 735px;
+            }
+        }
+
+        .circle-logo {
+            position: absolute;
+            left: 55%;
+            top: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            -webkit-backface-visibility: hidden;
+            -webkit-transform-style: preserve-3d;
+            -webkit-filter: opacity(0.99999);
+            will-change: transform;
+
+            @include mq(small) {}
+
+            @include mq(medium) {
+                left: 52%;
+                width: auto;
+            }
+
+            svg {
+                width: 100%;
+            }
+        }
+
+        .banner-arrow {
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        position: relative;
+        background: #000;
+        text-align: center;
+        padding: 3rem 0 4rem;
+
+        h1,
+        p {
+            color: #fff;
+        }
+    }
+
+    .feature-wines {
+        transition: all .4s ease-in-out;
+
+        .feature-block {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 0 4rem;
+            text-align: center;
+            z-index: 5;
+            overflow: hidden;
+            transition: all .4s ease-in-out;
+
+            &:nth-child(1) h3,
+            &:nth-child(1) h4,
+            &:nth-child(4) h3,
+            &:nth-child(4) h4,
+            &:nth-child(6) h3,
+            &:nth-child(6) h4 {
+                color: #fff;
+            }
+
+            &:nth-child(2) h3,
+            &:nth-child(2) h4,
+            &:nth-child(3) h3,
+            &:nth-child(3) h4,
+            &:nth-child(5) h3,
+            &:nth-child(5) h4 {
+                color: #000;
+            }
+
+            .bottle {
+                transform: translateZ(0);
+                will-change: transform;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            h3 {
+                margin: 2rem 0 0;
+            }
+
+            h4 {
+                margin: 0 0 2rem;
+            }
+
+            &:nth-child(1) svg .st0 {
+                fill: #530d18;
+            }
+
+            &:nth-child(2) svg .st0 {
+                fill: #971b1f;
+            }
+
+            &:nth-child(3) svg .st0 {
+                fill: #fae0a9;
+            }
+
+            &:nth-child(4) svg .st0 {
+                fill: #530d18;
+            }
+
+            &:nth-child(5) svg .st0 {
+                fill: #fbfced;
+            }
+
+            &:nth-child(6) svg .st0 {
+                fill: #971b1f;
+            }
+
+            .crest {
+                position: absolute;
+                top: 5%;
+                right: 0;
+                z-index: -1;
+                opacity: 0;
+                will-change: opacity;
+
+                svg {
+                    width: 230px;
+                }
+            }
+
+
+        }
+
+        .feature-block {
+            @include mq(large) {
+                .crest {
+                    transition: all .4s ease-in-out;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    .bottle img {
+                        transition: all .6s ease-in-out !important;
+                        transform: scale(1.1) !important;
+                    }
+
+                    .crest {
+                        transition: all .4s ease-in-out;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .about {
+        position: relative;
+        height: auto;
+
+        @include mq(large) {
+            height: 1385px;
+        }
+
+        @include mq(xlarge) {
+            height: 1085px;
+        }
+
+        .about-bottle {
+            width: 50px;
+            position: absolute;
+            bottom: -1.5rem;
+            right: 5%;
+            z-index: 50;
+            display: none;
+
+            @include mq(480px) {
+                width: 100px;
+            }
+
+            @include mq(large) {
+                bottom: 6rem;
+                right: 560px;
+                width: 230px;
+                display: block;
+            }
+
+            @include mq(1280px) {
+                right: 860px;
+            }
+        }
+
+        .content {
+            position: relative;
+            transition: all .4s ease-in-out !important;
+            background: rgba(240, 240, 218, .9);
+
+            @include mq(large) {
+                width: 600px;
+                position: absolute;
+                top: 55%;
+                right: 0;
+                left: unset;
+                transform: translateY(-50%);
+            }
+
+            @include mq(1280px) {
+                width: 900px;
+            }
+
+            .content-container {
+                transition: all .4s ease-in-out !important;
+                padding: 2rem .9rem 2rem 1.5rem;
+
+                @include mq(480px) {
+                    padding: 2rem 7rem 2rem 4rem;
+                }
+
+                @include mq(medium) {
+                    padding: 2rem 9rem 2rem 4rem;
+                }
+
+                @include mq(xlarge) {
+                    padding: 2rem 6rem;
+                }
+            }
+
+            .about-callout {
+                background: #000;
+                padding: 2.5rem 4rem 1rem 3rem;
+                display: flex;
+                flex-direction: column;
+
+                @include mq(480px) {
+                    padding: 2.5rem 4rem 1rem;
+                }
+
+                @include mq(large) {
+                    padding: 3.5rem 8rem 2rem;
+                }
+
+                .callout-content {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    transition: all .4s ease-in-out;
+
+                    h2 {
+                        padding-right: 1.5rem;
+                        margin: -.5rem 0 0;
+                        font-size: 26px;
+
+                        @include mq(480px) {
+                            font-size: 36px;
+                        }
+                    }
+
+                    img {
+                        width: 20px
+                    }
+
+                    &:hover h2 {
+                        color: rgba(240, 240, 218, 1);
+                        ;
+                        transition: all .4s ease-in-out;
+
+                        @include mq(480px) {
+                            padding-right: 2.5rem;
+                        }
+                    }
+                }
+
+                p {
+                    color: #fff;
+
+                    @include mq(480px) {
+                        padding-right: 5rem;
+                    }
+                }
+            }
+        }
+
+        .meet-maker-content {
+            display: none;
+            position: relative;
+            transition: all .4s ease-in-out !important;
+            background: rgba(240, 240, 218, .9);
+            width: 100%;
+
+            @include mq(large) {
+                width: 900px;
+                position: absolute;
+                top: 55%;
+                right: 0;
+                left: unset;
+                transform: translateY(-50%);
+            }
+
+            @include mq(1280px) {
+                width: 1200px;
+            }
+
+            .bio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @include mq(xlarge) {
+                    // align-items: flex-start;
+                }
+
+                img {
+                    width: 216px;
+                    height: 320px;
+
+                    @include mq(xlarge) {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .signature {
+                    display: block;
+                    margin-top: 1.2rem;
+                }
+
+                .occupation {
+                    display: block;
+                    margin-top: .1rem;
+
+                    @include mq(xlarge) {
+                        width: 200px;
+                    }
+
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 26px;
+                text-transform: none;
+                line-height: 1;
+                padding-bottom: .5rem;
+                margin: 0;
+
+                @include mq(medium) {
+                    font-size: 46px;
+                }
+            }
+
+            .meet-maker-title {
+                color: #fff;
+                background: #000;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                position: relative;
+                padding: 2rem 2rem;
+
+                @include mq(large) {
+                    padding: 2rem 8rem;
+                }
+
+                span {
+                    align-self: center;
+                    justify-self: flex-end;
+                    position: absolute;
+                    right: 1%;
+                    font-size: 3.5rem;
+                    cursor: pointer;
+
+                    @include mq(480px) {
+                        right: 12%;
+                    }
+                }
+
+            }
+
+            .body {
+                padding: 2rem 2rem;
+
+                @include mq(large) {
+                    padding: 2rem 8rem;
+                }
+
+                .description {
+                    @include mq(480px) {
+                        padding-right: 4rem;
+                    }
+
+                    @include mq(large) {
+                        padding-right: 0;
+                    }
+
+                    @include mq(xlarge) {
+                        padding-right: 4rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .where-to-buy {
+        background: #f5f2eb;
+        padding: 10rem 40px 0;
+    }
+}

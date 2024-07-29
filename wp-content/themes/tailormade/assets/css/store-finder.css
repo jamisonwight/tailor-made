@@ -1,0 +1,217 @@
+@import url("https://use.typekit.net/owi1myz.css");
+
+#finder_captcha table {
+	margin: 20px 0 !important;
+}
+
+#finder_body {
+	font-family: 'din-2014';
+    font-weight: 400;
+	margin:0;
+	padding:0 0 50px;
+	width:100%;
+	background-color:transparent;
+}
+
+#finder_body a {
+	color: #bc3640;
+}
+
+#finder_body a:hover {
+	color: #000;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 639px) {
+	#finder {
+		max-width: 100% !important;
+	}
+}
+
+#finder_form {
+	border-top:1px solid #bc3640;
+	margin-top:20px;
+}
+
+#finder_content {
+	margin:0;
+	padding:0;
+}
+
+#tab-list {
+	max-width:100%;
+	height:100%;
+}
+
+#tab-form .panel-body,#tab-list .panel-body {
+	padding:0;
+}
+
+.form-horizontal .form-group {
+	margin:0;
+}
+
+#finder_tab_nav a {
+	box-shadow:none;
+	color: #bc3640;
+    text-align: left !important;
+    font-family: 'din-2014';
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+	line-height:36px;
+	padding:10px 20px;
+}
+
+#finder_tab_nav li {
+	border: none;
+}
+
+#finder_tab_nav li.active {
+	border: none;
+	color: #000;
+}
+
+#finder_tab_nav li.active:hover {
+	background:none!important;
+	border: none;
+}
+
+#finder_tab_nav li.active:hover a {
+	color: #000!important;
+}
+#finder {
+	max-width: 40%;
+}
+.panel {
+	background:none;
+	border-radius:0!important;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	font-size:16px;
+	padding:20px 0 0;
+}
+
+.panel-footer {
+	background: none;
+}
+
+.form-horizontal .control-label {
+	color:#000!important;
+	font-family: 'din-2014';
+	font-size:16px!important;
+}
+#finder_BFBRCD {
+	display: none !important;
+}
+select.form-control {
+	background-color: #fbfaf5 !important;
+	border: none !important;
+	border-radius:0!important;
+	font-size: 18px!important;
+	height: 45px !important;
+	margin:0 0 15px!important;
+	text-indent: 8px!important;
+	-webkit-appearance:none;
+}
+
+.finder_form_right select {
+	margin-bottom:15px!important;
+}
+
+select:focus,select.form-control:focus {
+	background-image:none!important;
+	border: none !important;
+	box-shadow:none!important;
+}
+
+input[type=text] {
+	background-color: #fbfaf5 !important;
+	border: none !important;
+	border-radius:0!important;
+	font-size: 18px!important;
+	height: 45px !important;
+	margin:0 0 15px!important;
+	text-indent: 8px!important;
+}
+
+input[type=text]:focus {
+	box-shadow:none!important;
+}
+
+input[type=text]::placeholder {
+	color:#666666!important;
+}
+
+.btn {
+	box-shadow: none !important;
+	font-family: "din-2014";
+	font-weight: 400;
+    font-size: 18px;
+    background: #000;
+    border-radius: 0;
+    padding: 1.1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.btn:hover,.btn:active {
+	color: #fff !important;
+    background: #bc3640 !important;
+    border: 1px solid #bc3640 !important;
+}
+#finder_map_paging {
+    top: 140px;
+}
+.finder_vip_logo {
+	display:none;
+}
+.panel-primary>.panel-heading {
+	background: none !important;
+}
+.panel-title {
+	color:#bc3640!important;
+}
+.panel-title>a,.panel-title>small,
+.panel-title>.small,
+.panel-title>small>a,
+.panel-title>.small>a {
+	color:#bc3640!important;
+	font-size:16px!important;
+	opacity:1;
+}
+
+.label-default {
+	background-color:#000;
+}
+.finder_miles {
+	background: #000;
+	padding: .2em .6em !important;
+}
+.alert-warning {
+	background-color:transparent!important;
+	border-radius:0;
+	border:1px solid #d878ac!important;
+	color: #000!important;
+	margin:30px 0!important;
+}
+#tab-form, #vipcopyright {
+	width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 750px) {
+	#finder {
+		max-width: 100% !important;
+	}
+	.form-horizontal .control-label {
+		font-size: 24px !important;
+	}
+	select.form-control,
+	input[type=text] {
+		font-size: 24px !important;
+		height: 50px !important;
+	}
+}
