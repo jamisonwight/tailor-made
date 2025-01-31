@@ -12,7 +12,7 @@
 							<li>|</li>
 							<li><a href="<?php echo BASE_PATH; ?>/privacy-policy/#ccpa">California Policy Notice</a></li>
 						</ul>
-						<span>&copy; <?php echo date("Y"); ?> Tailor Made Wines, Livermore, CA</span>
+						<span>&copy; <?php echo date("Y"); ?> Tailor Made Wines, Ripon, CA</span>
 					</div>
 				</div>
 			</footer> <!-- end .footer -->
