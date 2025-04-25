@@ -1,5 +1,8 @@
 import { TweenMax } from 'gsap'
-import scrollMagic from 'scrollmagic'
+import ScrollMagic from 'scrollmagic'
+import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap'
+
+ScrollMagicPluginGsap(ScrollMagic, TweenMax)
 
 var $window = window,
   $viewports = {
@@ -8,7 +11,7 @@ var $window = window,
     large: 1024,
     xlarge: 1440
   },
-  controller = new scrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%", refreshInterval: 400 } }),
+  controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%", refreshInterval: 400 } }),
   parallaxOffset,
   parallaxSmallOffset,
   wineBlockOffset,
@@ -48,7 +51,7 @@ $(function($) {
     // ANIMATIONS
     // Background Parallax
 
-    var scene1 = new scrollMagic.Scene({
+    var scene1 = new ScrollMagic.Scene({
       triggerElement: '.parallax',
       offset: parallaxOffset,
     })
@@ -56,16 +59,16 @@ $(function($) {
       .addTo(controller)
 
     // Background Parallax Small
-    // var parallaxController = new scrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}})
-    // var scene2 = new scrollMagic.Scene({
+    // var parallaxController = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}})
+    // var scene2 = new ScrollMagic.Scene({
     //     triggerElement: '.parallax-small',
     //     offset: parallaxSmallOffset,
     // })
     // .setTween(TweenMax.staggerFromTo('.parallax-small', 1, {backgroundPosition: "50% 0px"}, {backgroundPosition: "50% 160px"}, 0.15))
     // .addTo(parallaxController)
 
-    var crestController = new scrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%", refreshInterval: 400 } })
-    var scene3 = new scrollMagic.Scene({
+    var crestController = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%", refreshInterval: 400 } })
+    var scene3 = new ScrollMagic.Scene({
       triggerElement: '.parallax',
       offset: 0,
       duration: 900,
@@ -77,12 +80,12 @@ $(function($) {
 
     $('.feature-block').each((index, obj) => {
       // Wine Feature Blocks
-      var wineBlockController = new scrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "150%", refreshInterval: 400 } });
+      var wineBlockController = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "150%", refreshInterval: 400 } });
       var bottleTween1 = new TimelineMax()
         .add([
           TweenMax.staggerFromTo($(obj).children('.bottle'), 2, { y: '-40%' }, { y: '0%' }, 1)
         ]);
-      var scene4 = new scrollMagic.Scene({
+      var scene4 = new ScrollMagic.Scene({
         triggerElement: obj,
         offset: wineBlockOffset,
       })
@@ -115,7 +118,7 @@ $(function($) {
     //         TweenMax.staggerFromTo('.parallax-single-bottle', 3, {css:{transform: 'translateY(0%)'}}, {css:{transform: 'translateY(20%)'}}, 1.1)
     //     ]);
     // // build scene
-    // var scene = new scrollMagic.Scene({
+    // var scene = new ScrollMagic.Scene({
     //         triggerHook: 		'onEnter',
     //         triggerElement: 	'.wine-feature',
     //         offset: wineSingleOffset,
