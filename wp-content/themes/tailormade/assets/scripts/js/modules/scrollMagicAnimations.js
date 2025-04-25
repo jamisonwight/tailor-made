@@ -1,9 +1,9 @@
 import gsap from 'gsap'
-import { TweenMax } from 'gsap'
+import { TweenMax, TimelineMax } from 'gsap'
 import ScrollMagic from 'scrollmagic'
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap'
 
-ScrollMagicPluginGsap(ScrollMagic, gsap)
+ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax)
 
 var $window = window,
   $viewports = {
@@ -51,12 +51,15 @@ $(function($) {
 
     // ANIMATIONS
     // Background Parallax
-
+    var bgTween = new TimelineMax()
+      .add([
+        TweenMax.staggerFromTo('.parallax', 3, { backgroundPosition: 'left bottom' }, { backgroundPosition: 'left center' }, 0.15)
+      ])
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.parallax',
       offset: parallaxOffset,
     })
-      .setTween(TweenMax.staggerFromTo('.parallax', 3, { backgroundPosition: 'left bottom' }, { backgroundPosition: 'left center' }, 0.15))
+      .setTween(bgTween)
       .addTo(controller)
 
     // Background Parallax Small
@@ -69,12 +72,16 @@ $(function($) {
     // .addTo(parallaxController)
 
     var crestController = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%", refreshInterval: 400 } })
+    var crestTween = new TimelineMax()
+      .add([
+        TweenMax.staggerFromTo('.home .circle-logo', 2, { css: { rotation: -150 } }, { css: { rotation: 40 } }, 0.25)
+      ])
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.parallax',
       offset: 0,
       duration: 900,
     })
-      .setTween(TweenMax.staggerFromTo('.home .circle-logo', 2, { css: { rotation: -150 } }, { css: { rotation: 40 } }, 0.25))
+      .setTween(crestTween)
       .addTo(crestController)
 
 
