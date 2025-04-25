@@ -1,8 +1,9 @@
+import gsap from 'gsap'
 import { TweenMax } from 'gsap'
 import ScrollMagic from 'scrollmagic'
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap'
 
-ScrollMagicPluginGsap(ScrollMagic, TweenMax)
+ScrollMagicPluginGsap(ScrollMagic, gsap)
 
 var $window = window,
   $viewports = {
