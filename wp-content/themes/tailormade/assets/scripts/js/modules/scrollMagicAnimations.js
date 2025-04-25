@@ -1,3 +1,4 @@
+import { TweenMax } from 'gsap'
 import scrollMagic from 'scrollmagic'
 
 var $window = window,
