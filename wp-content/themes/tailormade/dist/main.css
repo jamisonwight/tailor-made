@@ -11662,7 +11662,7 @@ label {
 .page-id-1614 .wpcf7-response-output {
   float: left;
 }
-.page-id-1614 .wpcf7 label {
+.page-id-1614 .wpcf7 label:not(.legal .wpcf7 label) {
   display: none !important;
 }
 .page-id-1614 .wpcf7 input[type=text],
