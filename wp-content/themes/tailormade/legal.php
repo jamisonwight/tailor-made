@@ -91,16 +91,16 @@ span[data-name="req-type"] {
 .wpcf7-form-control-wrap[data-name="req-del-type"] {
   margin-left: 10px;
 
-  .wpcf7-list-item-label, 
+ 
   .wpcf7-list-item-label {
-    font-size: <?php echo $font_size; ?>;
-    font-family: <?php echo $font_family; ?>;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.8;
+    font-size: <?php echo $font_size; ?> !important;
+    font-family: <?php echo $font_family; ?> !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    line-height: 1.8 !important;
     letter-spacing: initial !important;
-    text-transform: initial;
-    color: <?php echo $text_color; ?>;
+    text-transform: initial !important;
+    color: <?php echo $text_color; ?> !important; 
   }
 }
 
