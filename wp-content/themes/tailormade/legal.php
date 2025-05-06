@@ -100,6 +100,7 @@ span[data-name="req-type"] {
     line-height: 1.8;
     letter-spacing: initial !important;
     text-transform: initial;
+    color: <?php echo $text_color; ?>;
   }
 }
 
