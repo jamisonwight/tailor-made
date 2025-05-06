@@ -17,7 +17,7 @@ $ccpa_request_shortcode = '[contact-form-7 id="ffda7d9" title="CCPA Request"]';
 $page_slug = get_post_field('post_name', get_post());
 
 // Legal template container classes
-$lg_classes = 'legal privacy grid-x content-page';
+$lg_classes = 'legal privacy grid-x page-template-page-php content-page';
 $lg_wrap_classes = 'legal-wrap inner-grid-small';
 $lg_copyWrap_classes = 'legal-copy-wrap grid-container content-container'; 
 
@@ -131,7 +131,14 @@ span[data-name="req-type"] {
         padding: 5px;
         display: block;
     }
+
 }
+
+
+.grid-x {
+    justify-content: center !important;
+}
+
 
 @media screen and (max-width: 768px) {
     /* Hide table headers on mobile with !important */
