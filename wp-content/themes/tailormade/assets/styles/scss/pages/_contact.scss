@@ -10,7 +10,7 @@
 .wpcf7 input[type="text"],
 .wpcf7 input[type="text"]::placeholder,
 .wpcf7 input::placeholder,
-.wpcf7-list-item-label {
+.wpcf7-list-item-label:not(.legal .wpcf7-list-item-label){
     font-family: "din-2014",sans-serif !important;
     font-size: 0.775rem !important;
     text-transform: uppercase !important;

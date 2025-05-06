@@ -6,6 +6,8 @@
 *.swp
 Thumbs.db
 .htaccess
+**/node_modules
+.cache
 
 # wordpress specific
 wp-config.php
