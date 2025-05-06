@@ -1,10 +1,10 @@
 #wpcf7-f4-p98-o1 > form {max-width: 65%;}
 .wpcf7 {float: left; margin-bottom: 100px !important;}
-.wpcf7 .small {float: left;  margin: 0 2% 1% 0;max-width: 31%; width: 100%;}
+.wpcf7 .small{float: left;  margin: 0 2% 1% 0;max-width: 31%; width: 100%;}
 .wpcf7 .medium {float: left; margin: 0 2% 1% 0; max-width: 47.5%; width: 100%;}
 .wpcf7 .large {float: left;  margin: 0 0 1% 0;max-width: 96.5%; width: 100%;}
 .wpcf7 .clear {clear: both;}
-.wpcf7 small {font-family: 'Source Sans Pro', sans-serif; font-size: 0.875rem !important;}
+.wpcf7 small:not(.legal .wpcf7 .small) {font-family: 'Source Sans Pro', sans-serif; font-size: 0.875rem !important;}
 .wpcf7-response-output {float: left;}
 .wpcf7 label,
 .wpcf7 input[type="text"],

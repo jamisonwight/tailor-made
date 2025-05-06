@@ -11563,7 +11563,7 @@ label {
   clear: both;
 }
 
-.wpcf7 small {
+.wpcf7 small:not(.legal .wpcf7 .small) {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.875rem !important;
 }
