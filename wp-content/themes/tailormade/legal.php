@@ -47,7 +47,7 @@ $alt_text_color = '#000'; // black
   li {
     margin-bottom: 10px !important;
   }
-  .copy {
+  .legal-copy-wrap {
     p, ul li, tr, td, label {
         font-weight: <?php echo $font_weight; ?> !important;
         font-family: <?php echo $font_family; ?> !important;
