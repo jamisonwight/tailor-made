@@ -10018,9 +10018,7 @@ footer {
 .copyright a:hover, .copyright a:focus, .copyright a:active, .copyright a:visited {
   color: rgba(250, 250, 250, 0.9);
 }
-.copyright li:nth-child(2),
-.copyright li:nth-child(4),
-.copyright li:nth-child(6) {
+.copyright li:nth-child(even) {
   padding: 0 0.5rem;
   color: rgb(250, 250, 250);
 }
